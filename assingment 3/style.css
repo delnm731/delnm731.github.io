@@ -1,0 +1,26 @@
+body {
+    background: url(images/chocolate-islands.jpg);
+    margin: 0px;
+    padding: 0px;
+    font family: serif;
+}
+
+h2 {
+    font-weight: bold;
+    color: orange;
+}
+
+.wrapper {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+}
+
+.nutrition {
+    color:gray;
+}
+
+.black {
+    color: black;
+}
