@@ -1,0 +1,113 @@
+img {
+	width:100%;
+    padding-top: -10%;
+    position: relative;
+}
+
+.download {
+    width: 50%;
+    image-orientation: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #2e353f;
+}
+
+
+h2 
+{
+    font-family: 'Gill Sans';
+    font-size: 2em;
+    font-weight: 10px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-align: center;
+    padding: 10%;
+    line-height: 140%;
+}
+
+
+.inspiration {
+        font-family: 'Gill Sans';
+        font-size: 2em;
+        color:black;
+        font-weight: 10px;
+        letter-spacing: 5px;
+        font-weight: 100;
+        margin-left: 120%;
+	    position: absolute;
+        margin-top: -145%
+        
+	}
+
+.schedule {
+        font-family: 'Gill Sans';
+        font-size: 2em;
+        color:black;
+        margin-left: 135%;
+        font-weight: 10px;
+        letter-spacing: 5px;
+        font-weight: 100;
+	    position: absolute;
+        margin-top: -140%;
+	}
+
+.consult {
+        font-family: 'Gill Sans';
+        font-size: 2em;
+        color:black;
+        margin-left: 135%;
+        font-weight: 10px;
+        letter-spacing: 5px;
+        font-weight: 100;
+	    position: absolute;
+        margin-top: -140%;
+	}
+
+span.dropt:hover {
+    text-decoration: none; 
+    font-family: 'Gill Sans'; 
+    background: #2e353f; 
+    z-index: 20; 
+    font-size: 2em; 
+    color:white;
+    padding: 30px;}
+
+
+.body {
+    background-color: yellow;
+    height: 450%;
+    margin-left: -10;
+    margin-right: -10;
+}
+
+.phonescreen {
+    width: 30%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: -100;
+}
+
+.phonescreen2 {
+    width: 30%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 42%;
+}
+
+.phonescreen3 {
+    width: 30%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 92%
+}
+
+.phonescreen4 {
+    width: 30%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 142%;
+}
