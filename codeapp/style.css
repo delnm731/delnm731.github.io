@@ -1,3 +1,5 @@
+@media screen and (max-width: 320px) { @viewport { width: 320px; } }   @media screen and (min-width: 768px) and (max-width: 959px) { @viewport { width: 768px; } }
+
 img {
 	width:100%;
     padding-top: -10%;
@@ -67,16 +69,6 @@ h2
         margin-top: -140%;
 	}
 
-span.dropt:hover {
-    text-decoration: none; 
-    font-family: 'Gill Sans'; 
-    background: #2e353f; 
-    z-index: 20; 
-    font-size: 2em; 
-    color:white;
-    padding: 30px;}
-
-
 .body {
     background-color: yellow;
     height: 450%;
@@ -110,4 +102,14 @@ span.dropt:hover {
     margin-left: 20%;
     position: absolute;
     margin-top: 142%;
+}
+
+h3 {
+font-family: Helvetica; 
+font-weight: 100;
+letter-spacing: 0;
+line-height: 1.5;
+font-size: 0.5em;
+width: 150%
+
 }
