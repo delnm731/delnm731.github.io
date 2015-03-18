@@ -1,0 +1,89 @@
+.meet {
+    font-size: 140%;
+    font-family: Gill Sans;
+    font-weight: 100;
+    letter-spacing: 6px;
+    transform: rotate(270deg);
+    position: absolute;
+    margin-top: 4%;  
+}
+  
+.name {
+    font-size: 800%;
+    font-family: Didot;
+    font-weight: 100;
+    letter-spacing: 6px;
+    position: absolute;
+    font-style: italic;
+    margin-top: -2%;
+    margin-left: 5%;
+}
+
+.whose {
+    font-family: Baskerville; 
+    position: absolute;
+    margin-top:8%;
+    letter-spacing: 2px;
+    font-size: 200%
+    }
+
+.birthday {
+    font-family: Courier; 
+    position: absolute;
+    margin-top:18%;
+    letter-spacing: 5px;
+    font-size: 300%;
+    transform: rotate(90deg);
+    margin-left: -1%;
+    }
+
+.is {
+    font-family: Avenir; 
+    position: absolute;
+    margin-top:16%;
+    letter-spacing: 8px;
+    font-size: 600%;
+    margin-left: -5%;
+    transform: rotate(-90deg);
+    }
+
+.date {
+    font-family: Helvetica Neue; 
+    font-weight: 100;
+    position: absolute;
+    margin-top:6%;
+    letter-spacing: 5px;
+    font-size: 1000%;
+    margin-left: 12%;
+    }
+
+.and {
+    font-family: Helvetic; 
+    font-weight: 1000%;
+    position: absolute;
+    margin-top:14%;
+    letter-spacing: 5px;
+    font-size: 1300%;
+    margin-left: 12%;
+    }
+
+.loves {
+    font-family: futura; 
+    font-style: italic;
+    position: absolute;
+    margin-top:20%;
+    letter-spacing: 5px;
+    font-size: 350%;
+    margin-left: 21%;
+    transform: rotate(-90deg);
+    }
+
+.color {
+    font-family: Garamond;
+    font-weight: 1000%;
+    position: absolute;
+    margin-top:10%;
+    letter-spacing: 5px;
+    font-size: 1500%;
+    margin-left: 30%;
+    }
