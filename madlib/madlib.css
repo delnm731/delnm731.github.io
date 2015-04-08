@@ -1,0 +1,19 @@
+h1 {
+    font-family: Futura;
+    font-size: 4em;  
+    text-align: left;
+    margin-left: 20%;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    color: #FF1493;
+    padding-top: 1%;
+    }
+
+#madlib {
+    font-family: 'Didot'; 
+    font-style: italic;
+    font-size: 200%;
+    display: block;
+    margin: auto;
+}
