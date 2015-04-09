@@ -1,0 +1,78 @@
+h1 {
+    font-family: Futura;
+    font-size: 400%;  
+    text-align: center;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    color: #FF1493;
+    }
+
+body {
+    font-family: Futura;
+    font-size: 100%;  
+    text-align: left;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    color: black;
+    padding-top: 1%;
+    }
+
+
+.day {
+    font-family: Futura;
+    font-size: 200%;  
+    text-align: center;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    color: #FF1493;
+}
+
+.color {
+    font-family: Futura;
+    font-size: 200%;  
+    text-align: center;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    color: #FF1493;
+}
+
+.food {
+    font-family: Futura;
+    font-size: 200%;  
+    text-align: center;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    color: #FF1493;
+}
+
+.body {
+    font-family: Futura;
+    font-size: 200%;  
+    text-align: center;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    color: #FF1493;
+}
+
+.company {
+    font-family: Futura;
+    font-size: 200%;  
+    text-align: center;
+    letter-spacing: 3;
+    line-height: 0.8;
+    font-weight: 200;
+    color: #FF1493;
+}
+
+#sentence {
+   font-family: 'Didot'; 
+    font-style: italic;
+    font-size: 200%;
+    text-align: center;
+}
