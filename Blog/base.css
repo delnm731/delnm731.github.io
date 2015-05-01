@@ -1,0 +1,271 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    float: right;
+    height: 100%;
+    overflow: auto;
+}
+
+.navigation {
+    width: 0%;
+    background-color: black;
+    height: 100%;
+    float: left;
+    position: absolute;
+    opacity: 0.5;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.hamburger {
+    float: left;
+    margin-left: 0%;
+    transition: all 1s;
+    position: absolute;
+}
+
+.hamburger.expand {
+    margin-left: 19.9%;
+}
+
+.navigation.expand {
+    width: 20%;
+    color: white;
+    height: 100%;
+}
+
+nav {
+    padding-top: 20%;
+    width: 100%;
+    color: white;
+    font-family: Gill Sans;
+    line-height: 200%;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 10;
+}
+
+nav a {
+    width: 100%;
+    text-decoration: none;
+    color: white; 
+
+}
+
+
+a:hover {
+    background-color: gray;
+    color: black;
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.title-1 {
+    font-size: 18em;
+    font-family: "helvetica neue";
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    left-margin: auto;
+    right-margin:auto; 
+    
+}
+
+.header img {
+    width: 100%;
+    margin-top: -12%;
+    position: center;
+    margin-bottom: -10%
+}
+
+.info {
+    font-family: 'Didot 96 A', 'Didot 96 B';
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 4em;
+    
+}
+
+figcaption {
+    margin-left: 10%;
+    font-family: Didot;
+    font-size: 3.5em;
+    padding-top: 1%;
+    font-style: italic;
+    font-weight: 100;
+    text-align: right;
+    margin-right: 20%;
+    line-height: 140%;
+}
+
+
+.text {
+    font-family: Bodoni;
+    font-size: 4em;  
+    text-align: left;
+    margin-left: 20%;
+    letter-spacing: 3;
+    line-height: 1.2;
+    font-weight: 200;
+    padding-top: 2%;
+    }
+
+.container-article {
+    max-width: 30em;
+    display: block;
+    margin: auto;
+}
+
+p { 
+    font-family: Didot;
+}
+
+p italic {
+    font-style: italic;
+}
+
+figcaption {
+    font-family: Didot;
+    font-size: 0.8em;
+    font-weight: 100;
+    padding-top: 1em;
+}
+
+/************ HEADERS  ************/  
+
+h1 {
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    text-align: center;
+    font-size: 10em;
+    padding-top: 1.1em;
+}
+
+h2 {
+    font-family: Didot;
+    font-size: 5em;
+    font-weight: 100;
+    text-align: center;
+    font-style: italic;
+    margin-top: -1.2em;
+    }
+
+/* Hover Artist */
+
+h3 {
+    font-size: 3.5em;
+    font-family: 'Didot';
+    font-weight: 100;
+    text-align: right;
+    margin-right: 0.8em;
+    font-style: italic;
+}
+
+/* Hover Location */
+
+h4 {
+    font-size: 3em;
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    text-align: right;
+    margin-right: 0.8em;
+    margin-top: -0.5em;
+    letter-spacing: 0.1em;
+}
+
+/************ GRID  ************/
+
+.g {
+    padding: 0.25em;
+    overflow: hidden;
+}
+.g li {
+    float: left;
+    width: 50%;
+    padding: 0em;
+    padding: 4.8%;
+}
+
+.g img {
+    display: block;
+    margin: auto;
+    z-index: 1%;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 40em) {
+    .g li {
+        width: 33.3333333333333333%; 
+    }
+    .g li:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+.g a {
+    position: relative;
+    display: block;
+}
+
+/************ CAPTION:HOVER ************/
+
+.caption {
+    background: red;
+    height: 180px;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.g a:hover .caption {
+    visibility: visible; 
+    transition: top 1s;
+    background-color: white;
+    width: 100%;
+    -webkit-animation: slideInUp;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
