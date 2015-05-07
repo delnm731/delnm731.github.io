@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" href="../base.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="../main.js"></script>
+    <title>The Art Advisor</title>
+        
+</head>
+<body>
+    
+<div class="navigation">
+    <nav>
+    <ul><a href="../index.html">HOME</a></ul>
+    <ul><a href="../pages/page1.html">ABOUT</a></ul>
+    <ul><a href="../pages/page2.html">CONTACT</a></ul>
+    <ul><a href="../pages/page3.html">SIGN UP</a></ul>
+    </nav>
+</div>
+    
+<div class="hamburger">
+ <img src="../resources/hamburger.jpg" alt="Hamburger Menu" style="width:48px;height:48px">   
+</div>
+    
+<h1>THE ART ADVISOR</h1>
+<h2>Encouraging The Art of Viewing Art</h2>
+        
+        <article class="container-article">
+        <h5>SIGN UP</h5>
+            <br>
+            <br>
+        
+        <p>To receive e-newsletter regarding the lastest news in the art world,<br> please provide your information:</p>
+        
+        <div class="submit">
+        <form action="action_page.php">
+            
+            <div class="request">
+            Your request has been submitted!
+            </div>
+            <br>
+            
+            <input type="text" name="firstname" placeholder="First name">
+            <br>
+            <br>
+          
+            <input type="text" name="lastname" placeholder="Last name">
+            <br>
+            <br>
+           
+            <input type="text" name="emailaddress" placeholder="Email address">
+            <br>
+            <br>
+            
+            <br>
+            <div class="malefemale">
+            <input type="radio" name="sex" value="male" checked>Male
+            <br>
+            <br>
+            <input type="radio" name="sex" value="female">Female
+            </div>
+            <br>
+            <br>
+            
+            <center>
+            <a onclick="myFunction()" class="btn">Submit</a> 
+            </center>
+            </div>
+            
+<p id="demo"></p>
+
+<script>
+$(".request").hide();
+function myFunction() {
+            $.ajax(
+                {
+                    url: "../data.json",
+                    cache:false,
+                    success: function(data){
+                    $(".request").show();                
+                    }
+                }
+                
+            );
+     
+};
+
+</script>            </form>
+        </div>
+       </article> 
+    </body>
+    
+</html>
