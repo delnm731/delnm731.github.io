@@ -12,6 +12,7 @@
 </head>
 <body>
     
+    <div id="blur-region" class="">
 <div class="navigation">
     <nav>
     <ul><a href="../index.html">HOME</a></ul>
@@ -28,30 +29,28 @@
 <h1>THE ART ADVISOR</h1>
 <h2>Encouraging The Art of Viewing Art</h2>
         
-        <article class="container-article">
-        <h5>SIGN UP</h5>
-            <br>
-            <br>
+         <article class="container-article">
+        <div class="nav-title">SIGN UP</div>
+        <br>
+        <br>
         
         <p>To receive e-newsletter regarding the lastest news in the art world,<br> please provide your information:</p>
         
         <div class="submit">
         <form action="action_page.php">
             
-            <div class="request">
-            Your request has been submitted!
-            </div>
+            
             <br>
             
-            <input type="text" name="firstname" placeholder="First name">
+            <input id="firstname" type="text" name="firstname" placeholder="First name">
             <br>
             <br>
           
-            <input type="text" name="lastname" placeholder="Last name">
+            <input id="lastname" type="text" name="lastname" placeholder="Last name">
             <br>
             <br>
            
-            <input type="text" name="emailaddress" placeholder="Email address">
+            <input id="emailaddress" type="text" name="emailaddress" placeholder="Email address">
             <br>
             <br>
             
@@ -66,31 +65,26 @@
             <br>
             
             <center>
-            <a onclick="myFunction()" class="btn">Submit</a> 
+            <a class="btn" id="submit-btn">Submit</a> 
             </center>
             </div>
             
 <p id="demo"></p>
 
-<script>
-$(".request").hide();
-function myFunction() {
-            $.ajax(
-                {
-                    url: "../data.json",
-                    cache:false,
-                    success: function(data){
-                    $(".request").show();                
-                    }
-                }
-                
-            );
-     
-};
-
-</script>            </form>
+            </form>
         </div>
-       </article> 
+       </article>
+    </div>
+    <div class="overlay"></div>
+            <div class="request">
+            <div class="close-request"><img src=../resources/close-btn.png></div>
+            Your request has been submitted!
+            </div>
+    
+            <div class="error">
+            <div class="close-request"><img src=../resources/close-btn.png></div>
+            Please make sure you fill all the fields!
+            </div>
     </body>
     
 </html>

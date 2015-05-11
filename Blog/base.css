@@ -138,7 +138,7 @@ figcaption {
 
 p { 
     font-family: Didot;
-    line-height: 20px;
+    line-height: 22px;
     font-size: 1em;
     }
 
@@ -171,6 +171,14 @@ a:hover {
     font-size: 0.8em;
     line-height: 1.5em;   
     }
+
+.rights {
+    font-size: 0.9em;
+    font-family: 'Didot', serif;
+    font-weight: 100;
+    font-style: italic;
+    colro: red;
+}
 /************ HEADERS  ************/  
 
 h1 {
@@ -195,7 +203,7 @@ h2 {
 /* Hover Artist */
 
 h3 {
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: 'Didot', serif;
     font-weight: 100;
     text-align: right;
@@ -208,31 +216,44 @@ h3 {
 /* Hover Location */
 
 h4 {
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 100;
     text-align: right;
     margin-right: 0.8em;
     margin-top: -0.8em;
     letter-spacing: 0.1em;
-}
+    }
 
 h5 {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 100;
-    letter-spacing: 0.2em;
-    text-align: left;
-    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 3.5em;
     margin-bottom: -0.8em;
-}
+    padding-top: 1.1em;
+    }
+
 
 h6 {
     font-size: 0.9em;
     font-family: 'Didot', serif;
     font-weight: 100;
-    text-align: left;
+    float: right;
     font-style: italic;
-}
+    }
+
+.nav-title {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: -1em;
+    padding-top: 0.8em;
+    }
+
 /************ GRID  ************/
 
 .g {
@@ -262,7 +283,7 @@ h6 {
 /************ CAPTION:HOVER ************/
 
 .caption {
-    height: 50px;
+    height: auto;
     position: absolute;
     visibility: hidden;
     width: 100%;
@@ -390,7 +411,37 @@ a.btn {
     color: grey;
     font-family: "Helvetica Neue", sans-serif;
     text-align: center;
+    position: absolute;
+    width: 40em;
+    background-color: white;
+    z-index: 200;
+    margin-left: 50%;
+    left: -20em;
+    height: 10em;
+    padding: 4em;
+    top:300px;
+    border: 1px solid black;
 }
+
+.error {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: grey;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+    position: absolute;
+    width: 40em;
+    background-color: white;
+    z-index: 200;
+    margin-left: 50%;
+    left: -20em;
+    height: 10em;
+    padding: 4em;
+    top:300px;
+    border: 1px solid black;
+}
+
 
 /************ BUTTON ************/
 
@@ -424,7 +475,7 @@ a.btn {
 .btn-left {
     position: absolute;
     left: 200px;
-    top: 9px;
+    top: 110px;
     width: 10px;
     height: 10px;
 
@@ -445,10 +496,35 @@ a.btn {
 .btn-right {
     position: absolute;
     right: 200px;
-    top: 9px;
+    top: 110px;
     width: 10px;
     height: 10px;
 
+}
+
+.overlay {
+    background-color: gray;
+    opacity: 0.5;
+    width: 100%;
+    height: 110%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+}
+.blur-filter {
+    -webkit-filter: blur(1.5px); filter: blur(1.5px);
+}
+
+.close-request {
+    float: right;
+}
+
+.close-request img {
+    width: 2em;
+    height: auto;
+    margin: -3em;
+    margin-right: -5em;
 }
 
 /************ RESPONSIVE ************/
@@ -505,26 +581,106 @@ a.btn {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 100;
     letter-spacing: 0.2em;
-    text-align: left;
+    text-align: center;
     font-size: 1.5em;
+    padding-top: 2.5em;
+    }
+    
+    h6 {
+    font-size: 0.7em;
+    font-family: 'Didot', serif;
+    font-weight: 100;
+    float: right;
+    font-style: italic;
+    margin-top: 1em;
     }
     
     p { 
     font-family: Didot;
     line-height: 1.3em;
     font-size: 0.9em;
+    }  
     
-}
+    .btn-left {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    width: 10px;
+    height: 10px;
+    }
     
+    .btn-right {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    width: 10px;
+    height: 10px;
+    }
+    
+    .btn-left img {
+    width: 7px;
+    height: auto;
+    float: left;
+    }
+
+    .btn-right img {
+    width: 7px;
+    height: auto;
+    float: right;
+    }
+    
+    .request {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: grey;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+    position: absolute;
+    width: 20em;
+    background-color: white;
+    z-index: 200;
+    margin-left: 50%;
+    left: -10em;
+    height: 10em;
+    padding: 3.5em;
+    top:300px;
+    border: 1px solid black;
+    }
+
+    .error {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: grey;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+    position: absolute;
+    width: 20em;
+    background-color: white;
+    z-index: 200;
+    margin-left: 50%;
+    left: -10em;
+    height: 10em;
+    padding: 3.5em;
+    top:300px;
+    border: 1px solid black;
+    }
+    
+    .nav-title {
+    font-size: 1.8em;
+    margin-bottom: -1.4em;
+    }
 }
 
 @media screen and (min-width: 960px) {
     .g li {
         width: 33.3333333333333333%; 
     }
+    
     .g li:nth-child(3n+1) {
         clear: left;
-    }
+     } 
 }
 
 @media screen and (max-width: 960px) and (min-width:419px) {
@@ -535,12 +691,28 @@ a.btn {
     }
     
     .container-article {
-    max-width: 22em;
+    max-width: 35em;
     display: block;
     margin: auto;
     }
     
      h1 { 
     font-size: 3em;
+    }
+    
+    .btn-left {
+    position: absolute;
+    left: 120px;
+    top: 110px;
+    width: 10px;
+    height: 10px;
+    }
+    
+    .btn-right {
+    position: absolute;
+    right: 120px;
+    top: 110px;
+    width: 10px;
+    height: 10px;
     }
 }
