@@ -29,7 +29,7 @@ main {
     width: 20%;
     color: white;
     height: 240%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
     z-index: 10;
     position: fixed;
 }
@@ -52,15 +52,15 @@ main {
     position: fixed;
 }
 
-
 nav {
     padding-top: 20%;
     width: 100%;
     font-family: "helvetica neue", serif;
     line-height: 200%;
-    text-align: center;
+    text-align: left;
     font-size: 1em;
     letter-spacing: 5;
+    margin-left: -10;
 }
 
 nav a {
@@ -72,6 +72,14 @@ nav a {
 
 nav a:hover {
     color: black;
+}
+
+.navigation-info {
+    color: white;
+    font-size: 0.7em;
+    letter-spacing: 2;
+    line-height: 1.8;
+    padding-top: 90%;
 }
 
 /************ TEXT  ************/ 
@@ -156,7 +164,7 @@ a:hover {
 
 .contact-info {
     font-family: "Helvetica Neue", sans-serif;
-    color: gray;
+    color: black;
     letter-spacing: 1px;  
     font-weight: 200;
     font-size: 0.8em;
